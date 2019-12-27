@@ -1,0 +1,12 @@
+<h2>Posts</h2>
+<br>
+<br>
+<% @posts.each do |post| %>
+
+
+<div class='well'>
+  <h4><%= post.title%></h4>
+  <p><%= post.content%></p>
+  <%= link_to "Open post", post, :class => 'btn btn-default'%>
+  </div>
+<% end %>
